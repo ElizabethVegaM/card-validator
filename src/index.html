@@ -15,21 +15,25 @@
       <p class="main-text">Ingrese sus datos para validar su membresía y acceder a los beneficios del Club de Socios de Sakura Hotel:</p>
       <section class="card-container">
         <div class="credit-card">
-          <div class="card-img">
-            <img src="img/descarga.png" alt="">
+          <div class="card-title">
+            <img src="img/chip.png" alt="">
+            <h1>YourBANK</h1>
           </div>
-          <p class="card-title"><code>N° Tarjeta</code></p>
-          <p id="creditCardNumber" pattern="[0-9.]+"></p>
+          <div class="card-info">
+            <p class="card-number"><code>N° Tarjeta</code></p>
+            <p id="creditCardNumber" pattern="[0-9.]+">#### #### #### 1234</p>
+          </div>
+          <div class="card-name">
+            <p id="creditCardName">NOMBRE</p>
+          </div>
         </div>
       </section>
       <section class="info-container">
-        <p>1234567890123456</p>
-        <p>4120031947910628</p>
         <form id="validateForm">
-          <label for="client-name">Nombre y Apellido</label>
-          <input type="text" id="clientName">
           <label for="tarjeta">N° Tarjeta</label>
           <input id="cardNumberInput" type="number" minlength="1" maxlength="16">
+          <label for="client-name">Nombre y Apellido</label>
+          <input type="text" id="clientName">
           <button type="submit" class="validate-btn">Validar</button>
         </form>
       </section>

@@ -18,6 +18,11 @@ body {
 header {
   padding: 0.5rem;
   text-align: center;
+  height: 30vh;
+}
+
+header img {
+  height: 100%;
 }
 
 .card-container {
@@ -28,17 +33,53 @@ header {
 
 .credit-card {
   font-family: 'Source Code Pro', monospace;
-  height: 260px;
+  height: 250px;
   width: 450px;
   display: flex;
   flex-direction: column;
-  background-color: #666565;
   border-radius: 10px;
+  padding: 10px;
+  background: rgba(232,72,120,1);
+  background: -moz-linear-gradient(left, rgba(232,72,120,1) 0%, rgba(244,106,146,1) 55%, rgba(253,133,167,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(232,72,120,1)), color-stop(55%, rgba(244,106,146,1)), color-stop(100%, rgba(253,133,167,1)));
+  background: -webkit-linear-gradient(left, rgba(232,72,120,1) 0%, rgba(244,106,146,1) 55%, rgba(253,133,167,1) 100%);
+  background: -o-linear-gradient(left, rgba(232,72,120,1) 0%, rgba(244,106,146,1) 55%, rgba(253,133,167,1) 100%);
+  background: -ms-linear-gradient(left, rgba(232,72,120,1) 0%, rgba(244,106,146,1) 55%, rgba(253,133,167,1) 100%);
+  background: linear-gradient(to right, rgba(232,72,120,1) 0%, rgba(244,106,146,1) 55%, rgba(253,133,167,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e84878', endColorstr='#fd85a7', GradientType=1 );
+}
+
+.credit-card>div {
   padding: 10px;
 }
 
+.credit-card h1, .credit-card p {
+  margin: 0;
+}
+
 .card-title {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 25%;
+}
+
+.card-title img {
+  height: 100%;
+  width: auto;
+}
+
+.card-info {
+  height: 20%;
+}
+
+.card-number {
   font-size: 12px;
+}
+
+.card-name {
+  font-size: 28px;
 }
 
 #creditCardNumber {
